@@ -9,12 +9,25 @@ body {
 }
 
 header, nav, section, aside, footer {
-    background: #ebebeb
+    background: #ebebeb;
+    margin: 10px;
+    height: 50px;
 }
 
 article {
     color: #ebebeb;
     background: #777;
+    width: 95%;
+    text-align: center;
+    margin: 0 2.5%;
+    height: 130px;
+}
+
+aside {
+    float: left;
+    position: relative;
+    width: 425px;
+    height: 175px;
 }
 
 h1, p {
@@ -24,4 +37,12 @@ h1, p {
 
 section {
     width: 495px;
+    float: left;
+    height: 175px;
 }
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
